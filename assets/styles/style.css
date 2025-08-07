@@ -41,6 +41,9 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+
     section {
         margin-bottom: 32px;
     }
@@ -51,11 +54,22 @@ main {
 
     #img-principal {
         display: flex;
+        gap: 24px;
+    }
 
+    #img-principal>p,
+    #img-principal>figure {
+        width: 50%;
+    }
 
-        img {
-            max-width: 360px;
-        }
+    #img-principal img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    figure {
+        font-size: 13px;
     }
 }
 
@@ -74,7 +88,7 @@ footer {
     margin: 15px;
 }
 
-@media (max-width:510px) {
+@media (max-width:800px) {
     #barra-de-pesquisa {
         display: none;
     }
@@ -82,4 +96,13 @@ footer {
     aside {
         display: none;
     }
+
+    main {
+        display: block;
+        margin: 0;
+        padding: 0 8px;
+        text-align: justify;
+        width: 100%;
+    }
+
 }
