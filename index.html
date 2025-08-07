@@ -4,171 +4,220 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WIKI DIO</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css">
   </head>
   <body>
     <header>
-      <img src="assets/img/wikipedia.png" alt="Logotipo da Wikipédia" />
+      <div id="logos">
+        <img id="logo" src="assets/img/wikipedia.png" alt="Logotipo da Wikipédia" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="119px" viewBox="0 0 119 18"><path fill="#000" fill-rule="nonzero" d="M15.233.067c1.43-.01 4.63 0 4.635 0l.057.053v.497c0 .137-.078.205-.23.205-.747.035-.9.109-1.173.503-.15.215-.444.677-.749 1.194l-2.621 4.902-.073.152 3.203 6.556.194.053 5.046-11.975c.175-.483.148-.825-.077-1.026-.226-.196-.385-.312-.97-.337L22 .82a.278.278 0 0 1-.166-.06.172.172 0 0 1-.08-.145V.116l.073-.05h5.7l.059.05v.499c0 .135-.077.203-.23.203-.747.033-1.3.195-1.659.485s-.64.693-.84 1.214c0 0-4.64 10.6-6.229 14.152-.608 1.16-1.21 1.05-1.731-.033-.658-1.36-2.02-4.34-3.029-6.555-1.07 2.21-2.54 5.22-3.273 6.57-.709 1.23-1.29 1.07-1.757.031-1.61-3.81-4.92-10.5-6.483-14.232-.288-.69-.506-1.13-.711-1.307C1.439.97 1.01.866.358.83.12.804 0 .746 0 .652V.13L.058.08c.999-.006 5.61-.001 6.146 0h.051l.058.05v.497c0 .137-.087.203-.258.203l-.647.027c-.555.023-.832.19-.832.497 0 .143.058.375.188.689 1.24 3.02 5.53 12.1 5.53 12.066l.156.04 2.764-5.513c-.338-.746-.553-1.22-.553-1.224l-1.9-3.735s-.367-.747-.493-.995C9.433 1.032 9.451.942 8.607.828 8.371.797 8.249.767 8.249.65V.126l.07-.051C9.84.073 13.24.073 13.239.073l.13.043v.522c0 .119-.085.18-.259.18l-.356.051c-.901.07-.754.439-.155 1.63l1.823 3.73 2.016-4.02c.315-.688.276-.894.156-1.056l-.026-.035c-.08-.096-.348-.249-.933-.273L15.405.82a.274.274 0 0 1-.165-.06.17.17 0 0 1-.078-.145V.118zm21.208 5.27c.73 0 2.37-.053 2.369-.053l.026.052v.573c0 .078-.052.104-.156.13l-.287.053c-.807.155-1.09.286-1.093.808v3.93c.859 0 1.35-.441 2.499-1.665 1.04-1.15 1.85-2.11 1.848-2.603 0-.21-.234-.443-.755-.522-.104-.025-.156-.052-.156-.13v-.6l.026-.025s2.11.052 2.864.052c.677 0 1.82-.052 1.822-.052l.078.025v.6c0 .078-.078.13-.208.13-1.02.078-1.72.13-2.656 1.198l-2.238 2.576c-.443.47-.6.755-.599.964 0 .156.104.285.234.441l3.931 4.738c.312.363.937.52 1.458.624l.13.025c.078.026.182.078.182.156v.546l-.078.027s-1.22-.024-1.973-.026h-.135c-.651 0-1.59.025-1.588.026l-.026-.027v-.312c0-.339-.026-.624-.39-1.04l-2.89-3.593c-.39-.522-.807-.65-1.38-.65v3.855c0 .573.338.86 1.093.99l.287.053c.078.025.156.05.156.155v.547l-.026.053s-1.47-.048-2.29-.053h-.13c-.73 0-2.86.053-2.864.053l-.052-.053v-.547c0-.104.078-.155.182-.155l.52-.053c.781-.078 1.12-.495 1.12-.99V6.9c0-.572-.286-.73-1.12-.806l-.52-.054c-.104 0-.182-.024-.182-.104v-.6l.026-.052s2.13.052 2.941.052zM110.488.181c.363 0 .495.261.702.782l5.336 14.11c.365 1.02.886 1.41 1.927 1.509l.287.025c.13 0 .26.078.26.21v.493l-.078.052s-1.83-.048-2.882-.052h-.138c-.91 0-3.46.052-3.463.052l-.025-.052v-.494c0-.13.052-.209.184-.21l.73-.051c.987-.077 1.35-.391 1.093-1.12l-1.588-4.4h-5.415c-.625 0-.78.104-.91.442l-1.51 3.775c-.26.653.078 1.23 1.04 1.305l.756.053c.104 0 .208.078.208.207v.495l-.052.053s-2.61-.049-3.377-.053h-.085c-.678 0-2.34.053-2.344.053l-.053-.053v-.495c0-.129.078-.207.21-.207 1.15-.078 1.8-.287 2.523-1.953l5.778-13.537c.285-.677.495-.938.886-.938zM97.08 5.336c.703 0 2.71-.052 2.708-.052l.025.052v.573c0 .078-.053.13-.156.13l-.547.053c-.807.077-1.09.286-1.093.808l.002 8.668c0 .573.26.911 1.093.99l.547.053c.078 0 .156.05.156.155v.546l-.026.054s-1.8-.049-2.667-.053h-.117c-.73 0-2.76.053-2.76.053l-.052-.054v-.546c0-.104.078-.155.182-.155l.521-.053c.858-.078 1.12-.495 1.12-.99V6.9c0-.572-.313-.73-1.12-.806l-.521-.054c-.104 0-.182-.024-.182-.104v-.6l.026-.052s2.06.052 2.861.052zm-46.683 0c.703 0 2.71-.052 2.707-.052l.026.052v.573c0 .078-.052.13-.156.13l-.547.053c-.807.077-1.09.286-1.093.808v8.668c0 .573.26.911 1.093.99l.547.053c.078 0 .156.05.156.155v.546l-.026.054s-1.8-.049-2.668-.053h-.117c-.73 0-2.76.053-2.76.053l-.051-.054v-.546c0-.104.078-.155.182-.155l.52-.053c.86-.078 1.12-.495 1.12-.99V6.9c0-.572-.312-.73-1.12-.806l-.52-.054c-.104 0-.182-.024-.182-.104v-.6l.026-.052s2.06.052 2.863.052zm-21.716 0c.703 0 2.71-.052 2.707-.052l.026.052v.573c0 .078-.052.13-.156.13l-.547.053c-.807.077-1.09.286-1.093.808v8.668c0 .573.26.911 1.093.99l.547.053c.078 0 .156.05.156.155v.546l-.026.054s-1.8-.049-2.668-.053h-.117c-.73 0-2.76.053-2.76.053l-.051-.054v-.546c0-.104.078-.155.182-.155l.52-.053c.86-.078 1.12-.495 1.12-.99V6.9c0-.572-.313-.73-1.12-.806l-.52-.054c-.104 0-.182-.024-.182-.104v-.6l.026-.052s2.06.052 2.863.052zm53.274.001c.493 0 2.76-.052 3.436-.052 4.35 0 6.48 2.71 6.483 6.17 0 4.56-3.23 5.91-6.117 5.908-1.97 0-2.89-.047-3.672-.052h-.128c-.782 0-2.76.052-2.76.052l-.026-.053v-.546a.147.147 0 0 1 .154-.153l.599-.053c.782-.079 1.04-.312 1.042-1.119V6.85c0-.679-.184-.679-1.042-.755l-.571-.054c-.104 0-.184-.052-.184-.13v-.573l.025-.052s2.29.052 2.761.052zm-14.957-.053 2.603.052h6.716c.026 1.12.182 2.13.365 3.124l-.651.078c-.26-.937-.755-2.32-2.421-2.317h-2.083c-.495 0-.755.104-.755.547v3.853h1.953c.729 0 .91-.312 1.015-.833l.156-.547c0-.078.052-.13.156-.13h.443c.052 0 .052.026.052.078-.052.573-.156 1.3-.156 1.926 0 .651.104 1.2.156 1.796l-.052.052h-.443c-.13 0-.182-.052-.182-.13l-.13-.572c-.104-.521-.338-.807-1.015-.807h-1.953V15.8c0 .495.286.625.755.625h2.24c1.59 0 2.16-1.04 2.576-2.37l.65.079c-.311 1.28-.494 2.34-.546 3.176h-6.872l-2.577.052-.026-.052v-.573c0-.052.026-.13.156-.13l.599-.052c.807-.078 1.04-.286 1.041-.807V6.872c0-.599-.312-.755-1.041-.807l-.599-.052c-.156-.026-.156-.078-.156-.104v-.573l.026-.052zm-9.05.053c.729 0 1.77-.052 2.733-.052 3.69 0 4.37 1.82 4.371 3.177 0 1.56-.755 4.01-4.45 4.009-.65 0-1.17-.053-1.64-.26v3.486c0 .573.312.704 1.146.832l.522.079c.104.026.182.053.182.156v.546l-.025.052s-1.9-.047-2.772-.051h-.117c-.73 0-2.68.052-2.681.051l-.026-.052v-.546c0-.104.052-.13.156-.156l.546-.079c.807-.104 1.07-.338 1.068-.832l-.002-8.746c0-.807-.338-.833-1.562-.911-.156 0-.182-.077-.182-.13V5.31l.052-.026c.39 0 1.93.052 2.68.052zm26.689.703c-1.02 0-1.67.156-1.666.81v8.59c0 .726.18 1.17 2.16 1.17 2.86 0 4.48-1.07 4.479-4.712 0-2.71-.6-5.86-4.973-5.858zm-24.112.001c-1.25 0-1.56.234-1.563.911v4.53c.522.209 1.17.234 1.693.234 1.56 0 2.31-.94 2.315-2.942 0-2.24-1.02-2.73-2.445-2.733zm49.366-3.046h-.052l-2.603 6.611c-.104.261.077.338.65.339h4.53v-.001l-2.525-6.95zM73.245 0c.729 0 1.07.286 1.275.469a.69.69 0 0 0 .156.13l.079.286-2.994 2.837c-.39.39-.573.521-.755.521s-.364-.156-.364-.312 0-.338.156-.599L72.88.052c.079-.026.234-.052.365-.052z"/>
+        </svg>
+      </div>
+
+      <div id="barra-de-pesquisa">
+      <form action="">
+        <input type="text" placeholder="🔍️ Pesquisar na Wikipédia">
+        <button>Pesquisar</button>
+      </form>
+      </div>
+      
     </header>
-    <aside>
-      <nav>
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#historia">História</a></li>
-                <li><a href="#integrantes">Integrantes</a></li>
-                <li><a href="#discografia">Discografia</a></li>
-            </ul>
-        </nav>
-    </aside>
 
-    <main>
-      <h1 id="inicio">NCT Dream</h1>
-      <hr />
-      <p>
-        NCT Dream (em coreano: 엔시티 드림) é a terceira subunidade oficial do
-        grupo masculino sul-coreano NCT formado pela SM Entertainment em 2016. A
-        intenção inicial do grupo era possuir um sistema rotacional, em que os
-        membros sairiam após atingirem a maioridade (20 anos na idade coreana,
-        19 anos internacionalmente). Este sistema foi, posteriormente, suspenso
-        em 2020.
-      </p>
-
-      <p>
-        A subunidade estreou em agosto de 2016 com o lançamento do single
-        "Chewing Gum". O grupo consiste em sete membros: Mark, Renjun, Jeno,
-        Haechan, Jaemin, Chenle e Jisung. O NCT Dream foi reconhecido
-        internacionalmente como um dos artistas mais notáveis da adolescência de
-        sua época, conhecido pela música que reflete o crescimento da juventude.
-        A narrativa de suas faixas-título transmitiu pensamentos após diferentes
-        estágios de desenvolvimento do adolescente, com transição da inocência
-        para a rebelião e o crescimento. O sucesso comercial de seu EP de 2019,
-        We Boom, transformou o NCT Dream em um dos 10 melhores vendedores
-        físicos da Coreia do Sul em 2019 e ganhou o Bonsang Awards no 34º Golden
-        Disc Awards e 29º Seoul Music Awards em 2020.
-      </p>
-
-      <p>
-        Embora o NCT Dream tenha sido formado inicialmente para seguir um
-        sistema de graduação e admissão com base na idades, em 2020, a SM
-        Entertainment anunciou que o sistema havia sido removido, com o membro
-        graduado anteriormente Mark retornando, e o NCT Dream continuando as
-        atividades como um grupo de estilo flexível com os sete membros
-        originais. Seu quarto EP coreano, intitulado Reload, foi lançado em
-        abril de 2020 para marcar essa mudança em seu conceito.
-      </p>
-
-      <p>
-        O NCT Dream é o primeiro e único artista asiático a aparecer três vezes
-        consecutivas na lista "21 Under 21" da Billboard, em 2018, 2019 e 2020,
-        nas posições 20, 13 e 19 respectivamente, escolhidos pelo impacto do
-        setor nas vendas, streaming e mídia social.[9][10] Em 2018, o NCT Dream
-        foi incluído na lista dos "25 adolescentes mais influentes" do ano pela
-        Time, destacando sua conexão entre adolescentes.[5]
-      </p>
-
-      <h2 id="historia">História</h2>
-      <hr />
-
-      <p>
-        Entre 2016 e 2018, o NCT Dream estreou como a terceira subunidade do NCT, formada por Mark, Renjun, Jeno, Haechan, Jaemin, Chenle e Jisung, com o single “Chewing Gum” (2016). Lançaram o single álbum The First (2017), marcando a primeira vitória de uma subunidade do NCT em um programa musical, e o mini-álbum We Young (2017). Em 2018, participaram do projeto NCT 2018 Empathy com a faixa “Go” e lançaram o EP We Go Up, último trabalho com Mark antes de sua “graduação” do grupo no fim do ano. Durante esse período, o grupo consolidou seu nome com conceitos que evoluíram de um estilo juvenil para temáticas mais maduras.
-      </p>
-
-      <p>
-        De 2019 em diante, o NCT Dream expandiu sua atuação com colaborações internacionais, como “Don’t Need Your Love” com HRVY, e lançou EPs de sucesso como We Boom (2019), Reload (2020) e o álbum japonês The Dream. Após a abolição do sistema de graduação, Mark retornou e o grupo passou a ter formação fixa. Reload quebrou recordes de vendas e liderança em paradas, e em 2021, com os sete membros originais, lançaram Hot Sauce, seu primeiro álbum de estúdio, ultrapassando 2 milhões de cópias vendidas na Coreia e conquistando o primeiro “top 1” em singles na Coreia do Sul. A reedição Hello Future manteve o sucesso, consolidando o NCT Dream como um dos grupos mais populares da SM Entertainment.
-      </p>
-
-      <h2 id="integrantes">Integrantes</h2>
-      <hr />
-
-      <p>
-        Grande parte dos membros do NCT Dream fizeram parte do SM Rookies, um grupo de pré-estreia de trainees da SM Entertainment. A subunidade estreou com um sistema de admissão-graduação baseado na idade dos membros, mas isso foi deixado de lado em 2020.
-      </p>
-
-      <ul>
-        <li>Mark (마크) – Rapper principal, dançarino líder, vocalista de apoio e face(também é considerado líder do grupo embora não-oficialmente).</li>
-        <li>
-          Renjun (런쥔) – Vocalista principal e dançarino.
-        </li>
-  
-        <li>
-          Jeno (제노) – Visual, dançarino líder, rapper líder e vocalista de apoio.
-        </li>
-  
-        <li>
-          Haechan (해찬) – Vocalista principal e dançarino.
-        </li>
-  
-        <li>
-          Jaemin (재민) – Visual, dançarino líder, rapper e vocalista de apoio.
-        </li>
-  
-        <li>
-          Chenle (천러) – Vocalista principal e dançarino.
-        </li>
-  
-        <li>
-          Jisung (지성) – Dançarino principal, vocalista, rapper e maknae (integrante mais novo).
-        </li>
-      </ul>
-
-      <h2 id="discografia">Discografia</h2>
-      <hr />
-
-      <div>
-        <h3>Álbuns de estúdio</h3>
-        <ul>
-          <li>Hot Sauce (2021)</li>
-          <li>Glitch Mode (2022)</li>
-          <li>ISTJ (2023)</li>
-          <li>Dreamscape (2024)</li>
-          <li>Go Back to the Future (2025)</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Extended plays</h3>
-        <ul>
-          <li>We Young (2017)</li>
-          <li>We Go Up (2018)</li>
-          <li>We Boom (2019)</li>
-          <li>Reload (2020)</li>
-          <li>Candy (2022)</li>
-          <li>Dream()scape (2024)</li>
-        </ul>
-
-      <div>
-        <h3>Repackages</h3>
-        <ul>
-          <li>Hello Future (2021)</li>
-          <li>Beatbox (2022)</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Álbuns single</h3>
-        <ul>
-          <li>The First (2017)</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Álbuns ao vivo</h3>
-        <ul>
-          <li>NCT Dream The Dream Show (2020)</li>
-      </div>
-    </main>
-
-    <aside>
+    <div class="container">
+      <aside>
         <nav>
-        <h2>Outros grupos da SM</h2>
-        <ul>
-            <li><a href="#">NCT 127</a></li>
-            <li><a href="#">WayV</a></li>
-            <li><a href="#">EXO</a></li>
-            <li><a href="#">Riize</a></li>
-      </nav>
-    </aside>
+              <h2>Neste Artigo</h2>
+              <ul>
+                  <li><a href="#inicio">Início</a></li>
+                  <li><a href="#historia">História</a></li>
+                  <li><a href="#integrantes">Integrantes</a></li>
+                  <li><a href="#discografia">Discografia</a></li>
+              </ul>
+          </nav>
+      </aside>
 
-    <footer></footer>
+      <main>
+
+        <section>
+          <h1 id="inicio">NCT Dream</h1>
+          <hr />
+          <div id="img-principal">
+            <p>
+              NCT Dream (em coreano: 엔시티 드림) é a terceira subunidade oficial do
+              grupo masculino sul-coreano NCT formado pela SM Entertainment em 2016. A
+              intenção inicial do grupo era possuir um sistema rotacional, em que os
+              membros sairiam após atingirem a maioridade (20 anos na idade coreana,
+              19 anos internacionalmente). Este sistema foi, posteriormente, suspenso
+              em 2020.
+            </p>
+
+            <figure>
+              <img src="assets/img/NCT_Dream_at_DREAM()SCAPE_Press_Conference.png" alt="">
+              <figcaption>NCT Dream posando em sua coletiva de imprensa para seu EP DREAM()SCAPE em março de 2024.
+                          Da esquerda para a direita: Mark, Renjun, Jeno, Jaemin, Jisung, Haechan e Chenle
+              </figcaption>
+            </figure>
+          </div>
+
+          <br />
+
+          <p>
+            A subunidade estreou em agosto de 2016 com o lançamento do single
+            "Chewing Gum". O grupo consiste em sete membros: Mark, Renjun, Jeno,
+            Haechan, Jaemin, Chenle e Jisung. O NCT Dream foi reconhecido
+            internacionalmente como um dos artistas mais notáveis da adolescência de
+            sua época, conhecido pela música que reflete o crescimento da juventude.
+            A narrativa de suas faixas-título transmitiu pensamentos após diferentes
+            estágios de desenvolvimento do adolescente, com transição da inocência
+            para a rebelião e o crescimento. O sucesso comercial de seu EP de 2019,
+            We Boom, transformou o NCT Dream em um dos 10 melhores vendedores
+            físicos da Coreia do Sul em 2019 e ganhou o Bonsang Awards no 34º Golden
+            Disc Awards e 29º Seoul Music Awards em 2020.
+          </p>
+
+          <br />
+
+          <p>
+            Embora o NCT Dream tenha sido formado inicialmente para seguir um
+            sistema de graduação e admissão com base na idades, em 2020, a SM
+            Entertainment anunciou que o sistema havia sido removido, com o membro
+            graduado anteriormente Mark retornando, e o NCT Dream continuando as
+            atividades como um grupo de estilo flexível com os sete membros
+            originais. Seu quarto EP coreano, intitulado Reload, foi lançado em
+            abril de 2020 para marcar essa mudança em seu conceito.
+          </p>
+
+          <br />
+
+          <p>
+            O NCT Dream é o primeiro e único artista asiático a aparecer três vezes
+            consecutivas na lista "21 Under 21" da Billboard, em 2018, 2019 e 2020,
+            nas posições 20, 13 e 19 respectivamente, escolhidos pelo impacto do
+            setor nas vendas, streaming e mídia social.[9][10] Em 2018, o NCT Dream
+            foi incluído na lista dos "25 adolescentes mais influentes" do ano pela
+            Time, destacando sua conexão entre adolescentes.[5]
+          </p>
+        </section>
+
+
+        <section>
+          <h2 id="historia">História</h2>
+          <hr />
+
+          <p>
+            Entre 2016 e 2018, o NCT Dream estreou como a terceira subunidade do NCT, formada por Mark, Renjun, Jeno, Haechan, Jaemin, Chenle e Jisung, com o single “Chewing Gum” (2016). Lançaram o single álbum The First (2017), marcando a primeira vitória de uma subunidade do NCT em um programa musical, e o mini-álbum We Young (2017). Em 2018, participaram do projeto NCT 2018 Empathy com a faixa “Go” e lançaram o EP We Go Up, último trabalho com Mark antes de sua “graduação” do grupo no fim do ano. Durante esse período, o grupo consolidou seu nome com conceitos que evoluíram de um estilo juvenil para temáticas mais maduras.
+          </p>
+
+          <br />
+
+          <p>
+            De 2019 em diante, o NCT Dream expandiu sua atuação com colaborações internacionais, como “Don’t Need Your Love” com HRVY, e lançou EPs de sucesso como We Boom (2019), Reload (2020) e o álbum japonês The Dream. Após a abolição do sistema de graduação, Mark retornou e o grupo passou a ter formação fixa. Reload quebrou recordes de vendas e liderança em paradas, e em 2021, com os sete membros originais, lançaram Hot Sauce, seu primeiro álbum de estúdio, ultrapassando 2 milhões de cópias vendidas na Coreia e conquistando o primeiro “top 1” em singles na Coreia do Sul. A reedição Hello Future manteve o sucesso, consolidando o NCT Dream como um dos grupos mais populares da SM Entertainment.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="integrantes">Integrantes</h2>
+          <hr />
+
+          <p>
+            Grande parte dos membros do NCT Dream fizeram parte do SM Rookies, um grupo de pré-estreia de trainees da SM Entertainment. A subunidade estreou com um sistema de admissão-graduação baseado na idade dos membros, mas isso foi deixado de lado em 2020.
+          </p>
+
+          <br />
+
+          <ul>
+            <li>Mark (마크) – Rapper principal, dançarino líder, vocalista de apoio e face(também é considerado líder do grupo embora não-oficialmente).</li>
+            <li>
+              Renjun (런쥔) – Vocalista principal e dançarino.
+            </li>
+      
+            <li>
+              Jeno (제노) – Visual, dançarino líder, rapper líder e vocalista de apoio.
+            </li>
+      
+            <li>
+              Haechan (해찬) – Vocalista principal e dançarino.
+            </li>
+      
+            <li>
+              Jaemin (재민) – Visual, dançarino líder, rapper e vocalista de apoio.
+            </li>
+      
+            <li>
+              Chenle (천러) – Vocalista principal e dançarino.
+            </li>
+      
+            <li>
+              Jisung (지성) – Dançarino principal, vocalista, rapper e maknae (integrante mais novo).
+            </li>
+          </ul>
+        </section>
+
+        <h2 id="discografia">Discografia</h2>
+        <hr />
+        <section class="disco">
+
+          <div>
+            <h3>Álbuns de estúdio</h3>
+            <ul>
+              <li>Hot Sauce (2021)</li>
+              <li>Glitch Mode (2022)</li>
+              <li>ISTJ (2023)</li>
+              <li>Dreamscape (2024)</li>
+              <li>Go Back to the Future (2025)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Extended plays</h3>
+            <ul>
+              <li>We Young (2017)</li>
+              <li>We Go Up (2018)</li>
+              <li>We Boom (2019)</li>
+              <li>Reload (2020)</li>
+              <li>Candy (2022)</li>
+              <li>Dream()scape (2024)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Repackages</h3>
+            <ul>
+              <li>Hello Future (2021)</li>
+              <li>Beatbox (2022)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Álbuns single</h3>
+            <ul>
+              <li>The First (2017)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Álbuns ao vivo</h3>
+            <ul>
+              <li>NCT Dream The Dream Show (2020)</li>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+          <nav>
+          <h2>Outros grupos da SM</h2>
+          <ul>
+              <li><a href="#">NCT 127</a></li>
+              <li><a href="#">WayV</a></li>
+              <li><a href="#">EXO</a></li>
+              <li><a href="#">Riize</a></li>
+        </nav>
+      </aside>
+    </div>
+    <hr/>
+    <footer>
+      <p>Esta página foi editada pela última vez às 20h12min de 8 de julho de 2025.</p>
+    </footer>
   </body>
 </html>
